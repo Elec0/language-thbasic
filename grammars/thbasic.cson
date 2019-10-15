@@ -65,16 +65,32 @@
     'match': '\\b((?i)ATN)\\b'
     'name': 'entity.name.function.cbmbasic'
   }
+  { # BEEP function
+    'match': '\\b((?i)BEEP)\\b'
+    'name': 'entity.name.function.cbmbasic'
+  }
+  { # BRK function
+    'match': '\\b((?i)BRK)\\b'
+    'name': 'entity.name.function.cbmbasic'
+  }
   { # CHR$ function
     'match': '\\b((?i)CHR(\\$|\\b))'
+    'name': 'entity.name.function.cbmbasic'
+  }
+  { # CINT function
+    'match': '\\b((?i)CINT)\\b'
     'name': 'entity.name.function.cbmbasic'
   }
   { # CLOSE command
     'match': '\\b((?i)CLOSE)'
     'name': 'keyword.control.cbmbasic'
   }
-  { # CLR command
-    'match': '\\b((?i)CLR)'
+  { # CLEAR command
+    'match': '\\b((?i)CLEAR)'
+    'name': 'keyword.control.cbmbasic'
+  }
+  { # CLS command
+    'match': '\\b((?i)CLS)'
     'name': 'keyword.control.cbmbasic'
   }
   { # CMD command
@@ -85,48 +101,68 @@
     'match': '\\b((?i)CONT)'
     'name': 'keyword.control.cbmbasic'
   }
+  { # COLOR function
+    'match': '\\b((?i)COLOR)\\b'
+    'name': 'entity.name.function.cbmbasic'
+  }
   { # COS function
     'match': '\\b((?i)COS)\\b'
+    'name': 'entity.name.function.cbmbasic'
+  }
+  { # CSNG function
+    'match': '\\b((?i)CSNG)\\b'
+    'name': 'entity.name.function.cbmbasic'
+  }
+  { # CTL function
+    'match': '\\b((?i)CTL)\\b'
+    'name': 'entity.name.function.cbmbasic'
+  }
+  { # D2R function
+    'match': '\\b((?i)D2R)\\b'
     'name': 'entity.name.function.cbmbasic'
   }
   { # DATA command
     'match': '\\b((?i)DATA)'
     'name': 'keyword.control.cbmbasic'
   }
+  { # DATE function
+    'match': '\\b((?i)DATE)\\b'
+    'name': 'entity.name.function.cbmbasic'
+  }
   { # DEF command
     'match': '\\b((?i)DEF)'
+    'name': 'keyword.control.cbmbasic'
+  }
+  { # DEFINT command
+    'match': '\\b((?i)DEFINT)'
     'name': 'keyword.control.cbmbasic'
   }
   { # DIM command
     'match': '\\b((?i)DIM)'
     'name': 'keyword.control.cbmbasic'
   }
+  { # DIR$ function
+    'match': '\\b((?i)DIR(\\$|\\b))'
+    'name': 'entity.name.function.cbmbasic'
+  }
   { # END command
     'match': '\\b((?i)END)'
+    'name': 'keyword.control.cbmbasic'
+  }
+  { # EOF command
+    'match': '\\b((?i)EOF)'
     'name': 'keyword.control.cbmbasic'
   }
   { # EXP function
     'match': '\\b((?i)EXP)\\b'
     'name': 'entity.name.function.cbmbasic'
   }
-  { # FN function
-    'match': '\\b((?i)FN)'
-    'name': 'entity.name.function.cbmbasic'
-  }
   { # FOR command
     'match': '\\b((?i)FOR)'
     'name': 'keyword.control.cbmbasic'
   }
-  { # FRE function
-    'match': '\\b((?i)FRE)\\b'
-    'name': 'entity.name.function.cbmbasic'
-  }
   { # GET command
     'match': '\\b((?i)GET)'
-    'name': 'keyword.control.cbmbasic'
-  }
-  { # GET# command
-    'match': '\\b((?i)GET#)'
     'name': 'keyword.control.cbmbasic'
   }
   { # GOSUB command
@@ -137,20 +173,40 @@
     'match': '\\b((?i)GO(\\s*)?(?i)TO)'
     'name': 'keyword.control.cbmbasic'
   }
+  { # HEIGHT command
+    'match': '\\b((?i)HEIGHT)'
+    'name': 'keyword.control.cbmbasic'
+  }
+  { # HEX$ function
+    'match': '\\b((?i)HEX(\\$|\\b))'
+    'name': 'entity.name.function.cbmbasic'
+  }
   { # IF command
     'match': '\\b((?i)IF)'
     'name': 'keyword.control.cbmbasic'
   }
-  { # INPUT command
-    'match': '\\b((?i)INPUT)'
+  { # INKEY$ function
+    'match': '\\b((?i)INKEY(\\$|\\b))'
+    'name': 'entity.name.function.cbmbasic'
+  }
+  { # INPUT$ command
+    'match': '\\b((?i)INPUT(\\$|\\b))'
     'name': 'keyword.control.cbmbasic'
   }
-  { # INPUT# command
-    'match': '\\b((?i)INPUT#)'
+  { # INSTR command
+    'match': '\\b((?i)INSTR)'
     'name': 'keyword.control.cbmbasic'
   }
   { # INT function
     'match': '\\b((?i)INT)\\b'
+    'name': 'entity.name.function.cbmbasic'
+  }
+  { # ITM function
+    'match': '\\b((?i)ITM)\\b'
+    'name': 'entity.name.function.cbmbasic'
+  }
+  { # KEY function
+    'match': '\\b((?i)KEY)\\b'
     'name': 'entity.name.function.cbmbasic'
   }
   { # LEFT$ function
@@ -165,16 +221,32 @@
     'match': '\\b((?i)LET)'
     'name': 'keyword.control.cbmbasic'
   }
-  { # LIST command
-    'match': '\\b((?i)LIST)'
+  { # LG command
+    'match': '\\b((?i)LG)'
     'name': 'keyword.control.cbmbasic'
   }
-  { # LOAD command
-    'match': '\\b((?i)LOAD)'
+  { # LIN command
+    'match': '\\b((?i)LIN)'
+    'name': 'keyword.control.cbmbasic'
+  }
+  { # LINE command
+    'match': '\\b((?i)LINE)'
+    'name': 'keyword.control.cbmbasic'
+  }
+  { # LN command
+    'match': '\\b((?i)LN)'
+    'name': 'keyword.control.cbmbasic'
+  }
+  { # LOCATE command
+    'match': '\\b((?i)LOCATE)'
     'name': 'keyword.control.cbmbasic'
   }
   { # LOG function
     'match': '\\b((?i)LOG)\\b'
+    'name': 'entity.name.function.cbmbasic'
+  }
+  { # LOG10 function
+    'match': '\\b((?i)LOG10)\\b'
     'name': 'entity.name.function.cbmbasic'
   }
   { # MID$ function
@@ -189,9 +261,21 @@
     'match': '\\b((?i)NEXT)'
     'name': 'keyword.control.cbmbasic'
   }
-  { # NOT operator
+  { # NINT command
+    'match': '\\b((?i)NINT)'
+    'name': 'keyword.control.cbmbasic'
+  }
+  { # NUM operator
     'match': '\\b((?i)NOT)'
     'name': 'keyword.operator.cbmbasic'
+  }
+  { # OCT$ function
+    'match': '\\b((?i)OCT(\\$|\\b))'
+    'name': 'entity.name.function.cbmbasic'
+  }
+  { # ON command
+    'match': '\\b((?i)ON)'
+    'name': 'keyword.control.cbmbasic'
   }
   { # ON command
     'match': '\\b((?i)ON)'
@@ -201,17 +285,29 @@
     'match': '\\b((?i)OPEN)'
     'name': 'keyword.control.cbmbasic'
   }
-  { # OR operator
-    'match': '\\b((?i)OR)'
-    'name': 'keyword.operator.cbmbasic'
+  { # PCLEAR0 function
+    'match': '\\b((?i)PCLEAR0)\\b'
+    'name': 'entity.name.function.cbmbasic'
+  }
+  { # PCLEAR1 function
+    'match': '\\b((?i)PCLEAR1)\\b'
+    'name': 'entity.name.function.cbmbasic'
   }
   { # PEEK function
     'match': '\\b((?i)PEEK)\\b'
     'name': 'entity.name.function.cbmbasic'
   }
+  { # PMODE0 function
+    'match': '\\b((?i)PMODE0)\\b'
+    'name': 'entity.name.function.cbmbasic'
+  }
   { # POKE command
     'match': '\\b((?i)POKE)'
     'name': 'keyword.control.cbmbasic'
+  }
+  { # POLKEY$ function
+    'match': '\\b((?i)POLKEY(\\$|\\b))'
+    'name': 'entity.name.function.cbmbasic'
   }
   { # POS function
     'match': '\\b((?i)POS)\\b'
@@ -221,13 +317,21 @@
     'match': '\\b((?i)PRINT)'
     'name': 'keyword.control.cbmbasic'
   }
-  { # PRINT# command
-    'match': '\\b((?i)PRINT#)'
+  { # R2D# command
+    'match': '\\b((?i)R2D)'
+    'name': 'keyword.control.cbmbasic'
+  }
+  { # RANDOMIZE command
+    'match': '\\b((?i)RANDOMIZE)'
     'name': 'keyword.control.cbmbasic'
   }
   { # READ command
     'match': '\\b((?i)READ)'
     'name': 'keyword.control.cbmbasic'
+  }
+  { # REC command (comments)
+    'match': '((?i)REC)'
+    'name': 'comment.line.cbmbasic'
   }
   { # REM command (comments)
     'match': '((?i)REM.*(\\n|$))'
@@ -257,8 +361,12 @@
     'match': '\\b((?i)RUN)'
     'name': 'keyword.control.cbmbasic'
   }
-  { # SAVE command
-    'match': '\\b((?i)SAVE)'
+  { # SCR command
+    'match': '\\b((?i)SCR)'
+    'name': 'keyword.control.cbmbasic'
+  }
+  { # SCRATCH command
+    'match': '\\b((?i)SCRATCH)'
     'name': 'keyword.control.cbmbasic'
   }
   { # SGN function
@@ -269,40 +377,52 @@
     'match': '\\b((?i)SIN)\\b'
     'name': 'entity.name.function.cbmbasic'
   }
-  { # SPC function
-    'match': '\\b((?i)SPC)\\b'
+  { # SLEEP function
+    'match': '\\b((?i)SLEEP)\\b'
+    'name': 'entity.name.function.cbmbasic'
+  }
+  { # SPA function
+    'match': '\\b((?i)SPA)\\b'
+    'name': 'entity.name.function.cbmbasic'
+  }
+  { # SPACE$ function
+    'match': '\\b((?i)SPACE(\\$|\\b))'
+    'name': 'entity.name.function.cbmbasic'
+  }
+  { # SPC$ function
+    'match': '\\b((?i)SPC(\\$|\\b))'
     'name': 'entity.name.function.cbmbasic'
   }
   { # SQR function
     'match': '\\b((?i)SQR)\\b'
     'name': 'entity.name.function.cbmbasic'
   }
-  { # STATUS system variable
-    'match': '\\b((?i)STATUS)'
-    'name': 'variable.language.cbmbasic'
+  { # SQRT function
+    'match': '\\b((?i)SQRT)\\b'
+    'name': 'entity.name.function.cbmbasic'
   }
-  { # ST system variable
-    'match': '\\b((?i)ST)[^$%]'
-    'name': 'variable.language.cbmbasic'
-  }
-  { # STEP command
-    'match': '\\b((?i)STEP)'
-    'name': 'keyword.control.cbmbasic'
-  }
-  { # STOP command
-    'match': '\\b((?i)STOP)'
-    'name': 'keyword.control.cbmbasic'
+  { # STOP function
+    'match': '\\b((?i)STOP)\\b'
+    'name': 'entity.name.function.cbmbasic'
   }
   { # STR$ function
     'match': '\\b((?i)STR(\\$|\\b))'
     'name': 'entity.name.function.cbmbasic'
   }
-  { # SYS command
-    'match': '\\b((?i)SYS)'
-    'name': 'keyword.control.cbmbasic'
+  { # STRING$ function
+    'match': '\\b((?i)STRING(\\$|\\b))'
+    'name': 'entity.name.function.cbmbasic'
   }
-  { # TAB function
-    'match': '\\b(TAB)\\b'
+  { # SYS system variable
+    'match': '\\b((?i)SYS)\\b'
+    'name': 'variable.language.cbmbasic'
+  }
+  { # SYSTEM system variable
+    'match': '\\b((?i)SYSTEM)\\b'
+    'name': 'variable.language.cbmbasic'
+  }
+  { # TAB$ function
+    'match': '\\b((?i)TAB(\\$|\\b))'
     'name': 'entity.name.function.cbmbasic'
   }
   { # TAN function
@@ -313,9 +433,21 @@
     'match': '\\b((?i)THEN)'
     'name': 'keyword.control.cbmbasic'
   }
+  { # TIM command
+    'match': '\\b((?i)TIM)'
+    'name': 'keyword.control.cbmbasic'
+  }
   { # TIME/TIME$ system variables
     'match': '\\b((?i)TIME(\\$|\\b))'
     'name': 'variable.language.cbmbasic'
+  }
+  { # TIMER command
+    'match': '\\b((?i)TIMER)'
+    'name': 'keyword.control.cbmbasic'
+  }
+  { # TROFF/ON command
+    'match': '\\b((?i)TR(OFF|ON))'
+    'name': 'keyword.control.cbmbasic'
   }
   { # TI/TI$ system variables
     'match': '\\b((?i)TI(\\$|\\b))'
@@ -325,24 +457,24 @@
     'match': '\\b((?i)TO)'
     'name': 'keyword.control.cbmbasic'
   }
-  { # USR function
-    'match': '\\b((?i)USR)\\b'
+  { # TYP command
+    'match': '\\b((?i)TYP)'
+    'name': 'keyword.control.cbmbasic'
+  }
+  { # UPS$ function
+    'match': '\\b((?i)UPS(\\$|\\b))'
+    'name': 'entity.name.function.cbmbasic'
+  }
+  { # USER$ function
+    'match': '\\b((?i)USER(\\$|\\b))'
     'name': 'entity.name.function.cbmbasic'
   }
   { # VAL function
     'match': '\\b((?i)VAL)\\b'
     'name': 'entity.name.function.cbmbasic'
   }
-  { # VERIFY command
-    'match': '\\b((?i)VERIFY)'
-    'name': 'keyword.control.cbmbasic'
-  }
-  { # WAIT command
-    'match': '\\b((?i)WAIT)'
-    'name': 'keyword.control.cbmbasic'
-  }
-  { # CLS command
-    'match': '\\b((?i)CLS)'
-    'name': 'keyword.control.cbmbasic'
+  { # WIDTH function
+    'match': '\\b((?i)WIDTH)\\b'
+    'name': 'entity.name.function.cbmbasic'
   }
 ]
