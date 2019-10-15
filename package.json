@@ -1,6 +1,6 @@
 {
   "author": {
-    "name": "Aaron Steele",
+    "name": "Elec0",
     "email": "elec08215@gmail.com"
   },
   "description": "Telehack BASIC Syntax Highlighting",
@@ -20,6 +20,9 @@
   ],
   "license": "ISC",
   "name": "language-thbasic",
-  "repository": "https://github.com/Elec0/language-thbasic.git",
-  "version": "0.1.0"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Elec0/language-thbasic.git"
+  },
+  "version": "0.0.0"
 }
