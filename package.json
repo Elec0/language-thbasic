@@ -1,0 +1,28 @@
+{
+  "author": {
+    "name": "Aaron Steele",
+    "email": "elec08215@gmail.com"
+  },
+  "description": "Telehack BASIC Syntax Highlighting",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://atom.io/packages/language-thbasic",
+  "keywords": [
+    "Atom",
+    "package",
+    "language",
+    "basic",
+    "telehack",
+    "th",
+    "syntax",
+    "highlight"
+  ],
+  "license": "ISC",
+  "name": "language-thbasic",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elec0/language-thbasic.git"
+  },
+  "version": "0.0.0"
+}

@@ -1,0 +1,348 @@
+'scopeName': 'source.cbmbasic'
+'name': 'Telehack BASIC 0.1' # Mostly copied from Commadore BAISC 2.0 language package
+'fileTypes': ['bas', 'basic']
+'patterns': [
+#  { # lines that do not begin with a line number are marked invalid
+#    'match': '^\\D+'
+#    'name': 'invalid.illegal.cbmbasic'
+#  }
+  { # numeric constants, which may include scientific notation
+    'match': '(^\\d+)|(\\b(([0-9]+(\\.|\\s*E\\s*)?[0-9]*)|(\\.[0-9]+))\\b)'
+    'captures':
+      '1':
+        'name': 'markup.bold.cbmbasic'
+      '2':
+        'name': 'constant.numeric.cbmbasic'
+    'name': 'meta.constant.cbmbasic'
+  }
+  {
+    'match': '^<\\D+>'
+    'name': 'constant.numeric.cbmbasic'
+  }
+  { # strings
+    'match': '(")([^"]*(")|.*\\n|.*$)'
+    'captures':
+      '1':
+        'name': 'punctuation.definition.string.begin.cbmbasic'
+      '2':
+        'name': 'string.quoted.double.cbmbasic'
+      '3':
+        'name': 'punctuation.definition.string.begin.cbmbasic'
+    'name': 'meta.string.quoted.double.cbmbasic'
+  }
+  { # labels
+    'match': '(<)([a-z]+\\S(>))'
+    'name': 'constant.numeric.cbmbasic'
+  }
+  { # operators
+    'match': ':|;|=|\\+|-|\\*|/|\\^|\\?|!|\\[|\\]|"|&|<|>|<>|\\\\|@'
+    'name': 'keyword.operator.cbmbasic'
+    #'name': 'constant.numeric.cbmbasic'
+  }
+# { # functions
+#   'match': '\\b([A-Z]+\\$?)\\s*\\([^)]+\\)'
+#   'captures':
+#     '1':
+#       'name': 'entity.name.function.cbmbasic'
+# }
+  { # functions without arguments are invalid
+    'match': '\\b([A-Z]+\\$?)\\s*\\(\\)'
+    'name': 'invalid.illegal.cbmbasic'
+  }
+  { # ABS function
+    'match': '\\b((?i)ABS)\\b'
+    'name': 'entity.name.function.cbmbasic'
+  }
+  { # AND operator
+    'match': '\\b((?i)AND)'
+    'name': 'keyword.operator.cbmbasic'
+  }
+  { # ASC function
+    'match': '\\b((?i)ASC)\\b'
+    'name': 'entity.name.function.cbmbasic'
+  }
+  { # ATN function
+    'match': '\\b((?i)ATN)\\b'
+    'name': 'entity.name.function.cbmbasic'
+  }
+  { # CHR$ function
+    'match': '\\b((?i)CHR(\\$|\\b))'
+    'name': 'entity.name.function.cbmbasic'
+  }
+  { # CLOSE command
+    'match': '\\b((?i)CLOSE)'
+    'name': 'keyword.control.cbmbasic'
+  }
+  { # CLR command
+    'match': '\\b((?i)CLR)'
+    'name': 'keyword.control.cbmbasic'
+  }
+  { # CMD command
+    'match': '\\b((?i)CMD)'
+    'name': 'keyword.control.cbmbasic'
+  }
+  { # CONT command
+    'match': '\\b((?i)CONT)'
+    'name': 'keyword.control.cbmbasic'
+  }
+  { # COS function
+    'match': '\\b((?i)COS)\\b'
+    'name': 'entity.name.function.cbmbasic'
+  }
+  { # DATA command
+    'match': '\\b((?i)DATA)'
+    'name': 'keyword.control.cbmbasic'
+  }
+  { # DEF command
+    'match': '\\b((?i)DEF)'
+    'name': 'keyword.control.cbmbasic'
+  }
+  { # DIM command
+    'match': '\\b((?i)DIM)'
+    'name': 'keyword.control.cbmbasic'
+  }
+  { # END command
+    'match': '\\b((?i)END)'
+    'name': 'keyword.control.cbmbasic'
+  }
+  { # EXP function
+    'match': '\\b((?i)EXP)\\b'
+    'name': 'entity.name.function.cbmbasic'
+  }
+  { # FN function
+    'match': '\\b((?i)FN)'
+    'name': 'entity.name.function.cbmbasic'
+  }
+  { # FOR command
+    'match': '\\b((?i)FOR)'
+    'name': 'keyword.control.cbmbasic'
+  }
+  { # FRE function
+    'match': '\\b((?i)FRE)\\b'
+    'name': 'entity.name.function.cbmbasic'
+  }
+  { # GET command
+    'match': '\\b((?i)GET)'
+    'name': 'keyword.control.cbmbasic'
+  }
+  { # GET# command
+    'match': '\\b((?i)GET#)'
+    'name': 'keyword.control.cbmbasic'
+  }
+  { # GOSUB command
+    'match': '\\b((?i)GOSUB)'
+    'name': 'keyword.control.cbmbasic'
+  }
+  { # GOTO command
+    'match': '\\b((?i)GO(\\s*)?(?i)TO)'
+    'name': 'keyword.control.cbmbasic'
+  }
+  { # IF command
+    'match': '\\b((?i)IF)'
+    'name': 'keyword.control.cbmbasic'
+  }
+  { # INPUT command
+    'match': '\\b((?i)INPUT)'
+    'name': 'keyword.control.cbmbasic'
+  }
+  { # INPUT# command
+    'match': '\\b((?i)INPUT#)'
+    'name': 'keyword.control.cbmbasic'
+  }
+  { # INT function
+    'match': '\\b((?i)INT)\\b'
+    'name': 'entity.name.function.cbmbasic'
+  }
+  { # LEFT$ function
+    'match': '\\b((?i)LEFT(\\$|\\b))'
+    'name': 'entity.name.function.cbmbasic'
+  }
+  { # LEN function
+    'match': '\\b((?i)LEN)\\b'
+    'name': 'entity.name.function.cbmbasic'
+  }
+  { # LET command
+    'match': '\\b((?i)LET)'
+    'name': 'keyword.control.cbmbasic'
+  }
+  { # LIST command
+    'match': '\\b((?i)LIST)'
+    'name': 'keyword.control.cbmbasic'
+  }
+  { # LOAD command
+    'match': '\\b((?i)LOAD)'
+    'name': 'keyword.control.cbmbasic'
+  }
+  { # LOG function
+    'match': '\\b((?i)LOG)\\b'
+    'name': 'entity.name.function.cbmbasic'
+  }
+  { # MID$ function
+    'match': '\\b((?i)MID(\\$|\\b))'
+    'name': 'entity.name.function.cbmbasic'
+  }
+  { # NEW command
+    'match': '\\b((?i)NEW)'
+    'name': 'keyword.control.cbmbasic'
+  }
+  { # NEXT command
+    'match': '\\b((?i)NEXT)'
+    'name': 'keyword.control.cbmbasic'
+  }
+  { # NOT operator
+    'match': '\\b((?i)NOT)'
+    'name': 'keyword.operator.cbmbasic'
+  }
+  { # ON command
+    'match': '\\b((?i)ON)'
+    'name': 'keyword.control.cbmbasic'
+  }
+  { # OPEN command
+    'match': '\\b((?i)OPEN)'
+    'name': 'keyword.control.cbmbasic'
+  }
+  { # OR operator
+    'match': '\\b((?i)OR)'
+    'name': 'keyword.operator.cbmbasic'
+  }
+  { # PEEK function
+    'match': '\\b((?i)PEEK)\\b'
+    'name': 'entity.name.function.cbmbasic'
+  }
+  { # POKE command
+    'match': '\\b((?i)POKE)'
+    'name': 'keyword.control.cbmbasic'
+  }
+  { # POS function
+    'match': '\\b((?i)POS)\\b'
+    'name': 'entity.name.function.cbmbasic'
+  }
+  { # PRINT command
+    'match': '\\b((?i)PRINT)'
+    'name': 'keyword.control.cbmbasic'
+  }
+  { # PRINT# command
+    'match': '\\b((?i)PRINT#)'
+    'name': 'keyword.control.cbmbasic'
+  }
+  { # READ command
+    'match': '\\b((?i)READ)'
+    'name': 'keyword.control.cbmbasic'
+  }
+  { # REM command (comments)
+    'match': '((?i)REM.*(\\n|$))'
+    'name': 'comment.line.cbmbasic'
+  }
+  { # REM command (')
+    'match': '(\'.*(\\n|$))'
+    'name': 'comment.line.cbmbasic'
+  }
+  { # RESTORE command
+    'match': '\\b((?i)RESTORE)'
+    'name': 'keyword.control.cbmbasic'
+  }
+  { # RETURN command
+    'match': '\\b((?i)RETURN)'
+    'name': 'keyword.control.cbmbasic'
+  }
+  { # RIGHT$ function
+    'match': '\\b((?i)RIGHT(\\$|\\b))'
+    'name': 'entity.name.function.cbmbasic'
+  }
+  { # RND function
+    'match': '\\b((?i)RND)\\b'
+    'name': 'entity.name.function.cbmbasic'
+  }
+  { # RUN command
+    'match': '\\b((?i)RUN)'
+    'name': 'keyword.control.cbmbasic'
+  }
+  { # SAVE command
+    'match': '\\b((?i)SAVE)'
+    'name': 'keyword.control.cbmbasic'
+  }
+  { # SGN function
+    'match': '\\b((?i)SGN)\\b'
+    'name': 'entity.name.function.cbmbasic'
+  }
+  { # SIN function
+    'match': '\\b((?i)SIN)\\b'
+    'name': 'entity.name.function.cbmbasic'
+  }
+  { # SPC function
+    'match': '\\b((?i)SPC)\\b'
+    'name': 'entity.name.function.cbmbasic'
+  }
+  { # SQR function
+    'match': '\\b((?i)SQR)\\b'
+    'name': 'entity.name.function.cbmbasic'
+  }
+  { # STATUS system variable
+    'match': '\\b((?i)STATUS)'
+    'name': 'variable.language.cbmbasic'
+  }
+  { # ST system variable
+    'match': '\\b((?i)ST)[^$%]'
+    'name': 'variable.language.cbmbasic'
+  }
+  { # STEP command
+    'match': '\\b((?i)STEP)'
+    'name': 'keyword.control.cbmbasic'
+  }
+  { # STOP command
+    'match': '\\b((?i)STOP)'
+    'name': 'keyword.control.cbmbasic'
+  }
+  { # STR$ function
+    'match': '\\b((?i)STR(\\$|\\b))'
+    'name': 'entity.name.function.cbmbasic'
+  }
+  { # SYS command
+    'match': '\\b((?i)SYS)'
+    'name': 'keyword.control.cbmbasic'
+  }
+  { # TAB function
+    'match': '\\b(TAB)\\b'
+    'name': 'entity.name.function.cbmbasic'
+  }
+  { # TAN function
+    'match': '\\b((?i)TAN)\\b'
+    'name': 'entity.name.function.cbmbasic'
+  }
+  { # THEN command
+    'match': '\\b((?i)THEN)'
+    'name': 'keyword.control.cbmbasic'
+  }
+  { # TIME/TIME$ system variables
+    'match': '\\b((?i)TIME(\\$|\\b))'
+    'name': 'variable.language.cbmbasic'
+  }
+  { # TI/TI$ system variables
+    'match': '\\b((?i)TI(\\$|\\b))'
+    'name': 'variable.language.cbmbasic'
+  }
+  { # TO command
+    'match': '\\b((?i)TO)'
+    'name': 'keyword.control.cbmbasic'
+  }
+  { # USR function
+    'match': '\\b((?i)USR)\\b'
+    'name': 'entity.name.function.cbmbasic'
+  }
+  { # VAL function
+    'match': '\\b((?i)VAL)\\b'
+    'name': 'entity.name.function.cbmbasic'
+  }
+  { # VERIFY command
+    'match': '\\b((?i)VERIFY)'
+    'name': 'keyword.control.cbmbasic'
+  }
+  { # WAIT command
+    'match': '\\b((?i)WAIT)'
+    'name': 'keyword.control.cbmbasic'
+  }
+  { # CLS command
+    'match': '\\b((?i)CLS)'
+    'name': 'keyword.control.cbmbasic'
+  }
+]
