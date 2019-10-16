@@ -57,6 +57,10 @@
     'match': '\\b((?i)AND)'
     'name': 'keyword.operator.cbmbasic'
   }
+  { # AS function
+    'match': '\\b((?i)AS)\\b'
+    'name': 'keyword.control.cbmbasic'
+  }
   { # ASC function
     'match': '\\b((?i)ASC)\\b'
     'name': 'entity.name.function.cbmbasic'
@@ -87,15 +91,15 @@
   }
   { # CLEAR command
     'match': '\\b((?i)CLEAR)'
-    'name': 'keyword.control.cbmbasic'
+    'name': 'entity.name.function.cbmbasic'
   }
   { # CLS command
     'match': '\\b((?i)CLS)'
-    'name': 'keyword.control.cbmbasic'
+    'name': 'entity.name.function.cbmbasic'
   }
   { # CMD command
     'match': '\\b((?i)CMD)'
-    'name': 'keyword.control.cbmbasic'
+    'name': 'entity.name.function.cbmbasic'
   }
   { # CONT command
     'match': '\\b((?i)CONT)'
@@ -123,7 +127,7 @@
   }
   { # DATA command
     'match': '\\b((?i)DATA)'
-    'name': 'keyword.control.cbmbasic'
+    'name': 'entity.name.function.cbmbasic'
   }
   { # DATE function
     'match': '\\b((?i)DATE)\\b'
@@ -131,15 +135,15 @@
   }
   { # DEF command
     'match': '\\b((?i)DEF)'
-    'name': 'keyword.control.cbmbasic'
+    'name': 'entity.name.function.cbmbasic'
   }
   { # DEFINT command
     'match': '\\b((?i)DEFINT)'
-    'name': 'keyword.control.cbmbasic'
+    'name': 'entity.name.function.cbmbasic'
   }
   { # DIM command
     'match': '\\b((?i)DIM)'
-    'name': 'keyword.control.cbmbasic'
+    'name': 'entity.name.function.cbmbasic'
   }
   { # DIR$ function
     'match': '\\b((?i)DIR(\\$|\\b))'
@@ -175,7 +179,7 @@
   }
   { # HEIGHT command
     'match': '\\b((?i)HEIGHT)'
-    'name': 'keyword.control.cbmbasic'
+    'name': 'entity.name.function.cbmbasic'
   }
   { # HEX$ function
     'match': '\\b((?i)HEX(\\$|\\b))'
@@ -247,6 +251,10 @@
   }
   { # LOG10 function
     'match': '\\b((?i)LOG10)\\b'
+    'name': 'entity.name.function.cbmbasic'
+  }
+  { # MOD function
+    'match': '\\b((?i)MOD)\\b'
     'name': 'entity.name.function.cbmbasic'
   }
   { # MID$ function
@@ -329,9 +337,9 @@
     'match': '\\b((?i)READ)'
     'name': 'keyword.control.cbmbasic'
   }
-  { # REC command (comments)
+  { # REC command
     'match': '((?i)REC)'
-    'name': 'comment.line.cbmbasic'
+    'name': 'entity.name.function.cbmbasic'
   }
   { # REM command (comments)
     'match': '((?i)REM.*(\\n|$))'
@@ -343,7 +351,7 @@
   }
   { # RESTORE command
     'match': '\\b((?i)RESTORE)'
-    'name': 'keyword.control.cbmbasic'
+    'name': 'entity.name.function.cbmbasic'
   }
   { # RETURN command
     'match': '\\b((?i)RETURN)'
@@ -434,7 +442,7 @@
     'name': 'keyword.control.cbmbasic'
   }
   { # TIM command
-    'match': '\\b((?i)TIM)'
+    'match': '\\b((?i)TIM\\()'
     'name': 'keyword.control.cbmbasic'
   }
   { # TIME/TIME$ system variables
@@ -443,7 +451,7 @@
   }
   { # TIMER command
     'match': '\\b((?i)TIMER)'
-    'name': 'keyword.control.cbmbasic'
+    'name': 'entity.name.function.cbmbasic'
   }
   { # TROFF/ON command
     'match': '\\b((?i)TR(OFF|ON))'
